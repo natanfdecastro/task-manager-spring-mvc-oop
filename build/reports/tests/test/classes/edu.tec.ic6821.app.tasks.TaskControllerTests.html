@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class edu.tec.ic6821.app.tasks.TaskControllerTests</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class edu.tec.ic6821.app.tasks.TaskControllerTests</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/edu.tec.ic6821.app.tasks.html">edu.tec.ic6821.app.tasks</a> &gt; TaskControllerTests</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">2</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.022s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">givenInvalidIdReturnBadRequest</td>
+<td class="success">0.014s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">givenInvalidTaskListIdReturnBadRequest</td>
+<td class="success">0.008s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>2020-07-18 01:13:18.209  INFO 117 --- [    Test worker] .b.t.a.w.s.WebMvcTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [edu.tec.ic6821.app.tasks.TaskControllerTests], using SpringBootContextLoader
+2020-07-18 01:13:18.210  INFO 117 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [edu.tec.ic6821.app.tasks.TaskControllerTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-07-18 01:13:18.210  INFO 117 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [edu.tec.ic6821.app.tasks.TaskControllerTests]: TaskControllerTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2020-07-18 01:13:18.221  INFO 117 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration edu.tec.ic6821.app.Application for test class edu.tec.ic6821.app.tasks.TaskControllerTests
+2020-07-18 01:13:18.222  INFO 117 --- [    Test worker] .b.t.a.w.s.WebMvcTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2020-07-18 01:13:18.222  INFO 117 --- [    Test worker] .b.t.a.w.s.WebMvcTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@6447fd23, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@47dfd686, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@4b45a005, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@7dba5ebb, org.springframework.test.context.support.DirtiesContextTestExecutionListener@264f1aca, org.springframework.test.context.transaction.TransactionalTestExecutionListener@1f1d9363, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@79be5d0d, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@565e8b07, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@899524c, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@7bec5eb7, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@70b122f2, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@52158950]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.2.RELEASE)
+
+2020-07-18 01:13:18.243  INFO 117 --- [    Test worker] e.t.i.app.tasks.TaskControllerTests      : Starting TaskControllerTests on b02cd68a3235 with PID 117 (started by ? in /app)
+2020-07-18 01:13:18.244  INFO 117 --- [    Test worker] e.t.i.app.tasks.TaskControllerTests      : No active profile set, falling back to default profiles: default
+2020-07-18 01:13:18.450  INFO 117 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$f6e638ef] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-18 01:13:18.453  INFO 117 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-18 01:13:18.454  INFO 117 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@435347fc' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-18 01:13:18.459  INFO 117 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$1bbadba1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-18 01:13:18.463  INFO 117 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-18 01:13:18.790  INFO 117 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5b15ae4b, org.springframework.security.web.context.SecurityContextPersistenceFilter@48d70186, org.springframework.security.web.header.HeaderWriterFilter@3dc6230d, org.springframework.web.filter.CorsFilter@7abeb6c4, org.springframework.security.web.authentication.logout.LogoutFilter@6f2f8eca, edu.tec.ic6821.app.security.config.JwtAuthTokenFilter@72668daf, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1bfaa192, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@172837ab, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5ee74fda, org.springframework.security.web.session.SessionManagementFilter@32d944c0, org.springframework.security.web.access.ExceptionTranslationFilter@73840f49, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@614c0363]
+2020-07-18 01:13:18.952  INFO 117 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2020-07-18 01:13:18.953  INFO 117 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2020-07-18 01:13:18.961  INFO 117 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 8 ms
+2020-07-18 01:13:18.983  INFO 117 --- [    Test worker] e.t.i.app.tasks.TaskControllerTests      : Started TaskControllerTests in 0.758 seconds (JVM running for 11.174)
+2020-07-18 01:13:18.998  WARN 117 --- [    Test worker] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: &quot;id&quot;]
+2020-07-18 01:13:19.007  WARN 117 --- [    Test worker] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: &quot;task_list_id&quot;]
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 4.10.2</a> at Jul 18, 2020 1:13:20 AM</p>
+</div>
+</div>
+</body>
+</html>

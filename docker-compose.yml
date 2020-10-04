@@ -1,0 +1,55 @@
+version: '3.3'
+services:
+        build:
+                image: openjdk:8-jdk-alpine
+                depends_on:
+                        - testdb
+                links:
+                        - 'testdb:db'
+                user: "${DOCKER_COMPOSE_RUN_AS_USER}"
+                working_dir: /app
+                volumes:
+                        - .:/app
+                        - gradle-dist:/root/.gradle
+                command: sh -c './wait-for db:3306 -- ./gradlew clean build'
+                environment:
+                        - APP_DB_PWD
+                        - APP_AUTH_JWT_SECRET
+
+        app:
+                image: openjdk:8-jdk-alpine
+                depends_on:
+                        - db
+                links:
+                        - 'db:db'
+                user: "${DOCKER_COMPOSE_RUN_AS_USER}"
+                working_dir: /app
+                volumes:
+                        - .:/app
+                        - gradle-dist:/root/.gradle
+                ports:
+                        - '8080:8080'
+                        - '5005:5005'
+                command: sh -c './wait-for db:3306 -- ./gradlew bootRun'
+                environment:
+                        - APP_DB_PWD
+                        - APP_AUTH_JWT_SECRET
+
+        db:
+                image: mysql
+                volumes:
+                        - mysql-data:/var/lib/mysql
+                environment:
+                        - MYSQL_ROOT_PASSWORD
+
+        testdb:
+                image: mysql
+                environment:
+                        - MYSQL_ROOT_PASSWORD
+
+volumes:
+        gradle-dist:
+                external: false
+
+        mysql-data:
+                external: false
